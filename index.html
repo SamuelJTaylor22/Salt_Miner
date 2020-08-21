@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salt Miner</title>
+  <link rel="stylesheet"href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="container-fluid">
+    <section class="row text-center bg-primary text-light">
+      <div class="col">
+        <h1>Salt Miner</h1>
+      </div>
+    </section>
+  </header>
+  <main class="container-fluid">
+    <section class="row">
+      <div class="col-4 d-flex flex-column">
+        <div>
+          <button type="button" class="btn btn-primary my-2" id="Shakers" onclick="buyShaker()">Shakers <span id="shakerPrice"></span></button> 
+          <h5 id="shakerCount">Count: 1</h5>
+          <h4 id="shakerMult">Currently Multiplying Your Clicks by: 1</h4>
+        </div>
+        <div>
+          <button type="button" class="btn btn-primary my-2" id="filmButton" onclick="buy(film)">Film Inconsistencies<span id="filmPrice"></span></button > <h5 id="filmCount">Count: 0</h5>
+          <h4 id="filmGen">Currently Generating 0 S/S</h4>
+        </div>
+        <div>
+          <button type="button" class="btn btn-primary my-2" id="canonButton" onclick="buy(canon)">Slight Canon Changes<span id="canonPrice"></span></button><h5 id="canonCount">Count: 0</h5>
+          <h4 id="canonGen">Currently Generating 0 S/S</h4>
+        </div>
+        <div>
+          <button type="button" class="btn btn-primary my-2" id="badTeamButton" onclick="buy(team)">Underperforming Teammates<span id="teamPrice"></span></button><h5 id="teamCount">Count: 0</h5>
+          <h4 id="teamGen">Currently Generating 0 S/S</h4>
+        </div>
+        <div>
+          <button type="button" class="btn btn-primary my-2" id="trollButton" onclick="buy(troll)">Trolls<span id="trollPrice"></span></button><h5 id="trollCount">Count: 0</h5>
+          <h4 id="trollGen">Currently Generating 0 S/S</h4>
+        </div>
+        <div>
+          <button type="button" class="btn btn-primary my-2" id="politicsButton" onclick="buy(politics)">Politics<span id="politicsPrice"></span></button><h5 id="politicsCount">Count: 0</h5>
+          <h4 id="politicsGen">Currently Generating 0 S/S</h4>
+        </div>
+      </div>
+      <div class="col-4">
+        <section class="row text-center">
+          <div class="col-12">
+            <img src="/pjsalt.png" onclick="mine()" alt="">
+          </div>
+          <div class="col-12">
+            <h3 id="saltCount">Salt: 0</h3>
+          </div>
+          <div class="col-12">
+            <h3 id="saltPS">Salt/Second: 0</h3>
+          </div>
+        </section>
+      </div>
+      <div class="col-4">
+
+      </div>
+    </section>
+  </main>
+  <footer class="container-fluid">
+    
+      
+    </section>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

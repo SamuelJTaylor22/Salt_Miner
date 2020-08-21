@@ -1,8 +1,17 @@
 body { min-height: 100vh; display: flex; flex-direction: column; }
 header{
-  max-height: 10vh;
+ min-height: 5vh;
  } 
-main{flex-grow: 1;} 
+main{
+  flex-grow: 1;
+  background-image: url(./saltlake.jpg);
+  background-position: center;
+  background-size: cover;
+} 
 footer{
-  min-height: 10vh;
+  min-height: 5vh;
+ }
+
+ .text-shadow{
+   text-shadow: 1px 1px black;
  }

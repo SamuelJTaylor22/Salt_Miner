@@ -15,3 +15,7 @@ footer{
  .text-shadow{
    text-shadow: 1px 1px black;
  }
+
+ .secret{
+   font-size: 2pt;
+ }

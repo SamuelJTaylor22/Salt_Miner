@@ -14,8 +14,9 @@ let film = {
   baseMult: 0,
   upgradeMult: 1,
   gen: 0,
+  ogprice: 50,
   price: 50,
-  inflation: 1.2
+  inflation: 1.02
 }
 
 let canon = {
@@ -25,8 +26,9 @@ let canon = {
   baseMult: 0,
   upgradeMult: 1,
   gen: 0,
+  ogprice: 100,
   price: 100,
-  inflation: 1.3
+  inflation: 1.03
 }
 
 let team = {
@@ -36,8 +38,9 @@ let team = {
   baseMult: 0,
   upgradeMult: 1,
   gen: 0,
+  ogprice: 200,
   price: 200,
-  inflation: 1.4
+  inflation: 1.04
 }
 
 let troll = {
@@ -47,8 +50,9 @@ let troll = {
   baseMult: 0,
   upgradeMult: 1,
   gen: 0,
+  ogprice: 1000,
   price: 1000,
-  inflation: 1.5
+  inflation: 1.05
 }
 
 let politics ={
@@ -58,6 +62,7 @@ let politics ={
   baseMult: 0,
   upgradeMult: 1,
   gen: 0,
+  ogprice: 4790000,
   price: 4790000,
   inflation: 1.1
 }
@@ -75,9 +80,12 @@ function buy(object){
     object.count++
     object.baseMult += object.multperBuy
     object.gen = object.upgradeMult*object.baseMult
-    object.price = Math.floor(Math.pow(object.price, object.inflation))
+    object.price = object.ogprice + Math.floor(Math.pow(object.price, object.inflation))
     drawUpgrade(object)
     drawScore()
+    }
+    else{
+      alert("Not enough Salt!")
     }
 }
 
@@ -87,7 +95,7 @@ function buyShaker(){
   shaker.count++
   shaker.baseMult++
   shaker.mult = shaker.upgradeMult*shaker.baseMult
-  shaker.price = Math.floor(Math.pow(shaker.price, 1.1))
+  shaker.price = 10+ Math.floor(Math.pow(shaker.price, 1.005))
   }
   else{
     alert("Not enough Salt!")

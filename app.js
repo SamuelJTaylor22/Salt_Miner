@@ -105,7 +105,7 @@ function buyShaker(){
 }
 
 function autoSalt(){
-  salt += film.gen + canon.gen
+  salt += film.gen + canon.gen +team.gen+ troll.gen+ politics.gen
   // salt += film.gen
   // salt += film.gen
   // salt += film.gen

@@ -129,7 +129,7 @@ function drawShaker(){
 }
 
 function drawScore(){
-  totalgen = film.gen + canon.gen +troll.gen +team.gen
+  totalgen = film.gen + canon.gen +troll.gen +team.gen +politics.gen
   document.getElementById("saltCount").innerText = `Salt: ${salt}`
   document.getElementById("saltPS").innerText = `Salt/Second: ${totalgen} S/S`
 }
